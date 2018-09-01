@@ -1,0 +1,106 @@
+#homeHeader{
+    position:absolute;
+    width:100vw;
+}
+h2{
+    color: #3c7da8;
+    font-size:2vw;
+    position:relative;
+    margin-bottom:0px;
+}
+h4{
+    font-size:1vw;
+    color: dimgray;
+    margin-top:0px;
+    padding-top:0px;
+}
+.teachPic{
+    height:16vw;
+}
+
+.homeText{
+    font-size:2vw;
+    padding: 1vw;
+}
+.homeTextIcon{
+    color: #3c7da8;
+    font-size:2.5vw;
+    position:relative;
+    top:.4vw;
+}
+.homeBlurb{
+    font-size:1.3vw;
+    margin-top:1vw;
+}
+#homeTeachContainer{
+    width:70vw;
+    background-color: lightgray;
+    position:absolute;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    right:0px;
+    top:8vw;
+    animation:fadeInRight 1s;
+    animation-fill-mode: both;
+    height:16vw;
+}
+#homeLearnContainer{
+    width:70vw;
+    background-color: lightgray;
+    position:absolute;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    left:0px;
+    top:26vw;
+    animation:fadeInLeft 1s;
+    animation-delay: .2s;
+    animation-fill-mode: both;
+    height:16vw;
+}
+#homeTrackContainer{
+    width:70vw;
+    background-color: lightgray;
+    position:absolute;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    right:0px;
+    top:44vw;
+    animation:fadeInRight 1s;
+    animation-delay: .4s;
+    animation-fill-mode: both;
+    height:16vw;
+}
+#homeShareContainer{
+    width:70vw;
+    background-color: lightgray;
+    position:absolute;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    left:0px;
+    top:62vw;
+    animation:fadeInLeft 1s;
+    animation-delay: .6s;
+    animation-fill-mode: both;
+    height:16vw;
+}
+
+
+
+@keyframes fadeInRight{
+    from {
+        right:-80%;
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+    }
+ @keyframes fadeInLeft{
+    from {
+        left:-80%;
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
