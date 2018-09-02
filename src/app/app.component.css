@@ -11,7 +11,10 @@
     top:70px;
     left:0px;
     width:100%;
-    height:600px;
+    height: calc(100% - 70px);
+    height: -o-calc(100% - 70px);
+    height: -moz-calc(100% - 70px);
+    height: -webkit-calc(100% - 70px);
     z-index:10;
     background: white;
     font-family: montserrat;
