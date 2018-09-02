@@ -18,24 +18,37 @@
     display:block;
     width:100%;
     height:100%;
-    background: black;
-    opacity:.5;
+    background: rgba(0, 0, 0, 0.5);
     z-index:10;
+}
+.gridCell a:hover{
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 1s;
 }
 .cellTitle{
     display:block;
-    height:30px;
-    width:100px;
+    width:46vmin;
+    height:20vmin;
     position:absolute;
     top:50%;
-    margin-top:-15px;
-    font-size:30px;
+    margin-top:-10vmin;
+    font-size:5vmin;
     z-index:11;
-    color:white;
+    color: white;;
     left:50%;
-    margin-left:-50px;
-    filter: blur(0px)
+    margin-left:-23vmin;
+    font-weight: bold;
 }
+.cellSubtitle{
+    font-size: 3vmin;
+    position:relative;
+    top:1.8vh;
+    color:white;
+    font-weight:100;
+}
+
+
+
 #homeTeach{
     background: url('/assets/homeHeader.jpg');
     background-size: cover;
@@ -43,11 +56,6 @@
     animation: fadeIn 1s;
     animation-delay: 0s;
     animation-fill-mode:both;
-}
-.gridCell a:hover{
-    filter: blur(10px);
-    transition:all .2s;
-
 }
 #homeTrack{
     background: url('/assets/homeTrack.jpg');
